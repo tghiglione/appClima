@@ -14,15 +14,15 @@ const Navbar=()=>{
     return(
         <Box sx={{ flexGrow: 1}}>
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar sx={{ justifyContent: {md:'space-between'}}}>
                     <Box sx={{display:{md:'none'}}}>
                         <NavbarDrawer/>
                     </Box>  
-                <Typography variant="h6" component={NavLink} to="/" sx={{ flexGrow: 1 }}>
-                    ClimaFinder
+                <Typography className="logo" variant="h5" color="inherit" component={NavLink} to="/" >
+                    CityMapper
                 </Typography>
-                <Box sx={{display:{xs:'none', md:'block'}}}>
-                    <Button color="inherit" component={NavLink} to="/ciudades">Ciudades</Button>
+                <Box sx={{display:{xs:'none', md:'block'},mr:{md:10}}}>
+                    <Button sx={{mr:5}} color="inherit" component={NavLink} to="/ciudades">Ciudades</Button>
                     <Button color="inherit" component={NavLink} to="/clima">Clima</Button>
                 </Box>
                 </Toolbar>

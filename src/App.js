@@ -4,6 +4,7 @@ import Cities from './components/Cities/Cities';
 import Weather from './components/Weather/Weather';
 import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter,Routes, Route} from "react-router-dom";
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,9 +18,11 @@ function App() {
           <Route path='/ciudades' element={<Cities/>}/>
           <Route path='/clima' element={<Weather/>}/>
         </Routes>
+        <footer>
+          <Footer/>
+        </footer>
       </div>
     </BrowserRouter>
-    
   );
 }
 
