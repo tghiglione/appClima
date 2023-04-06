@@ -18,7 +18,7 @@ const Navbar=()=>{
                     <Box sx={{display:{md:'none'}}}>
                         <NavbarDrawer/>
                     </Box>  
-                <Typography className="logo" variant="h5" color="inherit" component={NavLink} to="/" >
+                <Typography className="logo" variant="h5" color="inherit" component={NavLink} to="/appClima/" >
                     CityMapper
                 </Typography>
                 <Box sx={{display:{xs:'none', md:'block'},mr:{md:10}}}>

@@ -38,7 +38,7 @@ export default function NavbarDrawer() {
         <List>
           {
             <ListItem key={"Home"} disablePadding>
-                <ListItemButton component={NavLink} to='/'>
+                <ListItemButton component={NavLink} to='/appClima/'>
                 <ListItemIcon>
                     <HomeIcon />
                 </ListItemIcon>

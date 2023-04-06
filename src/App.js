@@ -14,7 +14,7 @@ function App() {
           <Navbar/>
         </header>  
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/appClima/' element={<Home/>}/>
           <Route path='/ciudades' element={<Cities/>}/>
           <Route path='/clima' element={<Weather/>}/>
         </Routes>
